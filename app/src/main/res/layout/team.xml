@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3EEF7"
+    android:gravity="center"
+    android:orientation="vertical"
+>
+
+    <EditText
+        android:id="@+id/uid_tv"
+
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:hint="추가할 팀원의 uid를 입력하세요"
+        android:background="#EEEEEE"
+        android:gravity="center"
+        />
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_centerHorizontal="true"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:background="#EEEEEE"/>
+
+
+    <Button
+        android:id="@+id/add_btn"
+        android:text="팀원 추가"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+    <Button
+        android:id="@+id/copy_btn"
+        android:text="내 uid 복사하기"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+    <EditText
+        android:id="@+id/team_tv"
+        android:layout_marginTop="90dp"
+        android:layout_marginBottom="30dp"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:hint="추가할 그룹을 입력하세요"
+        android:background="#EEEEEE"
+        android:gravity="center"
+        />
+
+    <Button
+        android:id="@+id/team_add_btn"
+        android:text="그룹 추가"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+
+</LinearLayout>

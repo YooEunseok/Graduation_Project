@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ModifyHomework">
+
+    <TextView
+        android:id="@+id/m_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="과제명" />
+
+    <EditText
+        android:id="@+id/m_et_name"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/m_tv_name"/>
+
+    <TextView
+        android:id="@+id/m_tv_subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/m_tv_name"
+        android:layout_marginTop="12dp"
+        android:text="과목명"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/m_et_subject"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/m_tv_subject"
+        android:layout_below="@+id/m_et_name"/>
+
+    <TextView
+        android:id="@+id/m_tv_dueDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/m_et_subject"
+        android:textSize="25dp"
+        android:text="마감 기한" />
+
+    <EditText
+        android:id="@+id/m_et_dueDate"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/m_tv_subject"
+        android:layout_toRightOf="@+id/m_tv_dueDate"/>
+
+    <Button
+        android:id="@+id/m_btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="뒤로가기"
+        android:layout_below="@+id/m_tv_dueDate"
+        />
+    <Button
+        android:id="@+id/m_btn_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="확인"
+        android:layout_toRightOf="@id/m_btn_back"
+        android:layout_below="@+id/m_tv_dueDate"
+        />
+
+    <Button
+        android:id="@+id/m_btn_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="삭제"
+        android:layout_toRightOf="@id/m_btn_ok"
+        android:layout_below="@+id/m_tv_dueDate"
+        />
+
+
+</RelativeLayout>

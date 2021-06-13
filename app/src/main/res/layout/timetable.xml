@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3EEF7"
+    android:orientation="vertical"
+    tools:context=".MainActivity">>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="2dp">
+
+        <TextView
+            android:id="@+id/day1"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="11/08\n(Mon)"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/day2"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_margin="8dp"
+
+            android:text="11/08\n(Mon)"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/day3"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_margin="8dp"
+            android:text="11/08\n(Mon)"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/day4"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_margin="8dp"
+            android:text="11/08\n(Mon)"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/day5"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_margin="8dp"
+            android:text="11/08\n(Mon)"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <com.github.tlaabs.timetableview.TimetableView
+        android:id="@+id/timetable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:header_highlight_color="#00EEEEEE"
+        app:header_title="@array/my_header_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timetable"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이전" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="다음" />
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="추가" />
+    </LinearLayout>
+</RelativeLayout>

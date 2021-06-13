@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="userAvatarBG">#666666</color>
+    <color name="chatPrimary">#CC0000</color>
+    <color name="chatPrimaryFocus">#DD0000</color>
+    <color name="chatPrimaryPressed">#A60000</color>
+    <color name="chatPrimaryDisabled">#66cc0000</color>
+    <color name="chatBGnText">#FFFFFF</color>
+    <color name="chatSecondary">#FFFFFF</color>
+    <color name="chatSecondaryFocus">#F1F1F1</color>
+    <color name="chatSecondaryPressed">#E9E9E9</color>
+    <color name="chatSecondaryDisabled">#66FFFFFF</color>
+    <color name="botBGBubbleStroke">#FFCCCC</color>
+    <color name="botBGBubble">#FFE0CC</color>
+    <color name="userBGBubbleStroke">#CAE4F5</color>
+    <color name="userBGBubble">#CAE4F5</color>
+    <color name="sendButton">#6EB9EA</color>
+    <color name="checkbox">#161616</color>
+    <color name="statusBarColor">@color/chatPrimaryPressed</color>
+
+    <color name="colorHeader">#fcfcfc</color>
+    <color name="colorHeaderText">#7d7d7d</color>
+    <color name="colorTableItem">#efefef</color>
+    <color name="colorPrimary">#039BE5</color>
+    <color name="colorPrimaryDark">#0277BD</color>
+    <color name="colorAccent">#546E7A</color>
+    <string-array name="default_sticker_color">
+        <item>#f08676</item>
+        <item>#ecc369</item>
+        <item>#a7ca70</item>
+        <item>#7dd1c1</item>
+        <item>#7aa5e9</item>
+        <item>#fbaa68</item>
+        <item>#9f86e1</item>
+        <item>#78cb87</item>
+        <item>#d397ed</item>
+    </string-array>
+
+    <color name="default_side_header_font_color">#7d7d7d</color>
+    <color name="default_header_font_color">#7d7d7d</color>
+    <color name="default_header_highlight_font_color">#ffffff</color>
+    <color name="default_header_highlight_color">#74a4f3</color>
+    <color name="default_sticker_font_color">#ffffff</color>
+
+</resources>

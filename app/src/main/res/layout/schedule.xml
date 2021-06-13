@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" 일정"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:textColor="#ffffff"
+        android:id="@+id/TitleText"
+        android:drawableStart="@drawable/ic_baseline_date_range_24"
+        android:drawableLeft="@drawable/ic_baseline_date_range_24"
+        android:background="@color/colorPrimary"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="일정내용"
+            android:layout_gravity="center"
+            android:padding="3dp"
+            android:layout_marginLeft="8dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:id="@+id/LocationText"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="2020-10-10"
+            android:layout_gravity="center"
+            android:padding="3dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:id="@+id/dateText"/>
+    </LinearLayout>
+</LinearLayout>

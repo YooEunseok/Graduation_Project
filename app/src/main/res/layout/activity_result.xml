@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_result"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/first"
+        android:layout_weight="0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:orientation="vertical"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginTop="5dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/logo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/jalnan"
+                android:text="Garvis"
+                android:textColor="#ffffff"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/btn_calendar"
+                android:fontFamily="@font/cafe24ssurround"
+                android:text="캘린더"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="30dp"
+                android:background="@color/colorPrimary"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/btn_weekender"
+                android:fontFamily="@font/cafe24ssurround"
+                android:text="시간표"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="30dp"
+                android:background="@color/colorPrimary"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/btn_chat"
+                android:fontFamily="@font/cafe24ssurround"
+                android:text="챗봇"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="30dp"
+                android:background="@color/colorPrimary"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/mailButton"
+                android:fontFamily="@font/cafe24ssurround"
+                android:text="메일"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="30dp"
+                android:background="@color/colorPrimary"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/btn_team"
+                android:fontFamily="@font/cafe24ssurround"
+                android:text="팀플"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="30dp"
+                android:background="@color/colorPrimary"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/btn_logout"
+                android:fontFamily="@font/cafe24ssurround"
+                android:text="과제"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="30dp"
+                android:background="@color/colorPrimary"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

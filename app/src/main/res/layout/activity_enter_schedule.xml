@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+
+
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="제목"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/title"
+        android:id="@+id/qqq2"
+        >
+
+        <include layout="@layout/date_box"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/qqq"
+        android:layout_below="@+id/radioGroup"
+        >
+        <include layout="@layout/time_box"/>
+    </RelativeLayout>
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/qqq2"
+        >
+
+        <RadioButton
+            android:layout_weight="1"
+            android:text="시간"
+            android:checked="true"
+            android:id="@+id/rg_btn1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:layout_weight="1"
+            android:text="하루종일"
+            android:id="@+id/rg_btn2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/ok_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="저장하기"
+        android:layout_below="@+id/qqq"
+        android:layout_toRightOf="@+id/back_bt"
+        />
+    <Button
+        android:id="@+id/back_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="뒤로가기"
+        android:layout_below="@+id/qqq"
+
+        />
+
+</RelativeLayout>

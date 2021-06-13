@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EnterHomework">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="과제명" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tv_name"/>
+
+    <TextView
+        android:id="@+id/tv_subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_name"
+        android:layout_marginTop="12dp"
+        android:text="과목명"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/et_subject"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tv_subject"
+        android:layout_below="@+id/et_name"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/et_subject"
+        android:id="@+id/qqq2"
+        >
+
+        <include layout="@layout/date_box1"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/qqq"
+        android:layout_below="@+id/qqq2"
+        >
+        <include layout="@layout/time_box1"/>
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="뒤로가기"
+        android:layout_below="@+id/qqq"
+        />
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="확인"
+        android:layout_toRightOf="@id/btn_back"
+        android:layout_below="@+id/qqq"
+        />
+
+</RelativeLayout>

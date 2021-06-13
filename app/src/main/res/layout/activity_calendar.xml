@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3EEF7"
+    android:orientation="vertical">
+
+
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mcv_selectionColor="#a9dbf0cb"
+        app:mcv_showOtherDates="defaults" />
+
+    <Button
+        android:id="@+id/add_btn"
+        android:text="일정 입력"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+    <Button
+        android:id="@+id/hw_btn"
+        android:text="과제 입력"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="일정 목록"
+            />
+
+        <ListView
+            android:id="@+id/schedule_list"
+            android:layout_width="190dp"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv1"/>
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_toRightOf="@+id/tv1"
+            android:text="오늘까지 제출인 과제 목록" />
+
+        <ListView
+            android:id="@+id/hw_list"
+            android:layout_width="208dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/schedule_list"
+            android:layout_below="@+id/tv2"/>
+    </RelativeLayout>
+
+
+
+</LinearLayout>
