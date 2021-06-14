@@ -14,7 +14,7 @@ We thought it would be more meaningful to do a project to help Gachon University
 ## Tech Stack
 
 * Android Studio
-* Firebase Realtime Database
+* Firebase
 * Javascript
 
 -----------------
